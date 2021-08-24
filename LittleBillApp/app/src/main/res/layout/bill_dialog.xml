@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#23232F">
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:text="Bill"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"/>
+
+        <ImageButton
+            android:id="@+id/bill_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ic_close"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/tv_spending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#23232f"
+            android:text="Spending:1500.00"/>
+        <TextView
+            android:id="@+id/tv_earning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#23232f"
+            android:text="Earing:1000.00"/>
+        <TextView
+            android:id="@+id/tv_budget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#23232f"
+            android:text="Budget:1500.00"/>
+        <TextView
+            android:id="@+id/tv_overdraft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pink"
+            android:text="Overdraft:0"/>
+
+        <Button
+            android:id="@+id/detail_bt"
+            android:layout_width="160dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:text="See Details"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button3"/>
+
+    </LinearLayout>
+
+</LinearLayout>

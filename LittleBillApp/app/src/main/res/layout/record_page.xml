@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@drawable/record">
+
+    <ImageButton
+        android:id="@+id/recordpage_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="24dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_arrow_back"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/recordpage_forward"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="24dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_chart" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/currency"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/currency_yuan"/>
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/currency"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="48dp"
+        android:text="Income"
+        android:textSize="15dp"/>
+
+    <ImageView
+        android:id="@+id/item_kind"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/income"
+        android:layout_below="@id/item_name"
+        android:layout_toRightOf="@id/currency"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/account_number"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:inputType="number"
+        android:background="@null"
+        android:text="0"
+        android:textCursorDrawable="@color/pink"
+        android:textColor="#f9ad1b"
+        android:textSize="52dp"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#23232F"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="110dp"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/line"
+        android:layout_marginTop="5dp">
+
+        <com.example.littlebillapp.PageGridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pagingGridView"
+            app:PagingRows="2"
+            app:PagingColums="4"/>
+
+        <com.example.littlebillapp.PageIndicator
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:id="@+id/pageIndicator"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp">
+
+        <Button
+            android:id="@+id/finish_bt"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button3"
+            android:text="Finish"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/delete_bt"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button3"
+            android:layout_marginLeft="10dp"
+            android:text="Delete All"
+            android:textSize="20dp"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="4"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="6dp"
+        android:layout_below="@+id/layout2">
+
+        <Button
+            android:id="@+id/num1"
+            android:text="1"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_margin="3dp"
+            android:background="@drawable/button3"/>
+
+        <Button
+            android:id="@+id/num2"
+            android:text="2"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button3"
+            android:layout_margin="3dp"/>
+
+        <Button
+            android:id="@+id/num3"
+            android:text="3"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_margin="3dp"
+            android:background="@drawable/button3"/>
+
+        <Button
+            android:id="@+id/num4"
+            android:text="4"
+            android:textSize="20dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button3"/>
+
+        <Button
+            android:id="@+id/num5"
+            android:text="5"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button3"/>
+
+        <Button
+            android:id="@+id/num6"
+            android:text="6"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_margin="3dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button3"/>
+
+        <Button
+            android:id="@+id/num7"
+            android:text="7"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_margin="3dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button3"/>
+
+        <Button
+            android:id="@+id/num8"
+            android:text="8"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button3"/>
+
+        <Button
+            android:id="@+id/num9"
+            android:text="9"
+            android:textSize="20dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button3"/>
+
+        <Button
+            android:id="@+id/point"
+            android:text="."
+            android:textSize="20dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button4"/>
+
+        <Button
+            android:id="@+id/num0"
+            android:text="0"
+            android:textSize="20dp"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button3"/>
+
+        <ImageButton
+            android:id="@+id/delete"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:background="@drawable/button4"
+            android:src="@drawable/ic_delete" />
+    </GridLayout>
+
+</RelativeLayout>

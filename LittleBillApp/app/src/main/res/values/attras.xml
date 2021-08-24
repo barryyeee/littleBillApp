@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PageGridView">
+        <attr name="PagingRows" format="integer"/>
+        <attr name="PagingColums" format="integer"/>
+        <attr name="PagingDiver" format="reference"/>
+    </declare-styleable>
+</resources>

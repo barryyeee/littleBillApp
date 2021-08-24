@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:background="@drawable/login">
+
+    <ImageButton
+        android:id="@+id/loginpage_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/ic_arrow_back"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView
+            android:id="@+id/img_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:src="@drawable/ic_user"/>
+
+        <EditText
+            android:id="@+id/et_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_user"
+            android:layout_marginLeft="8dp"
+            android:textSize="20dp"
+            android:hint="User"
+            android:inputType="text"
+            android:maxLines="1"
+            android:theme="@style/underline"/>
+
+        <ImageView
+            android:id="@+id/img_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_below="@+id/img_user"
+            android:src="@drawable/ic_password"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_password"
+            android:layout_below="@id/et_user"
+            android:layout_marginLeft="8dp"
+            android:textSize="20dp"
+            android:hint="Password"
+            android:inputType="numberPassword"
+            android:maxLines="1"
+            android:theme="@style/underline"/>
+
+        <TextView
+            android:id="@+id/warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_password"
+            android:layout_marginTop="10dp"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/pink"
+            android:text="Welcome to LittleBill"/>
+
+        <Button
+            android:id="@+id/loginpage_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/warning"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/button2"
+            android:text="GO!"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_below="@id/loginpage_Button"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/text1"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:textSize="11dp"
+                android:background="@color/transparent"
+                android:text="NO ACCOUNT YET?"/>
+
+            <Button
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:textSize="11dp"
+                android:background="@color/transparent"
+                android:text="Create one!"
+                android:textColor="@color/yellow"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

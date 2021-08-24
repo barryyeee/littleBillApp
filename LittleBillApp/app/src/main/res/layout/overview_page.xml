@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/overview">
+
+    <ImageButton
+        android:id="@+id/overviewpage_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="24dp"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_arrow_back"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/overviewpage_forward"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="24dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_setting" />
+
+    <lecho.lib.hellocharts.view.PieChartView
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/account_chart"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/account_chart"
+        android:layout_marginTop="18dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ListView
+            android:id="@+id/detail1"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:background="@drawable/bk"/>
+
+        <ListView
+            android:id="@+id/detail2"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:background="@drawable/bk"/>
+
+        <ListView
+            android:id="@+id/detail3"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:background="@drawable/bk"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
